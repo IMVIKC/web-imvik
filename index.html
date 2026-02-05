@@ -3,73 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMVIK Consulting | Consultoría Estratégica</title>
+    <title>IMVIK Consulting</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .imvik-blue { color: #00AEEF; }
+        .bg-imvik-blue { background-color: #00AEEF; }
+        .imvik-orange { color: #F7941D; }
+        .bg-imvik-orange { background-color: #F7941D; }
+        .imvik-green { color: #8DC63F; }
+        .bg-imvik-green { background-color: #8DC63F; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-white text-slate-900">
 
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-gray-900">IMVIK<span class="text-blue-600 underline decoration-orange-500">Consulting</span></div>
-            <div class="space-x-6 hidden md:block">
-                <a href="#servicios" class="hover:text-blue-600 transition">Servicios</a>
-                <a href="#nosotros" class="hover:text-blue-600 transition">Nosotros</a>
-                <a href="#contacto" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Contacto</a>
+    <nav class="bg-white/90 backdrop-blur-md sticky top-0 z-50 py-4 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <img src="logo.png" alt="IMVIK Consulting" class="h-12 w-auto">
+            <div class="space-x-8 hidden md:flex items-center font-bold text-sm uppercase tracking-widest">
+                <a href="#servicios" class="hover:text-imvik-blue transition">Servicios</a>
+                <a href="#contacto" class="bg-imvik-blue text-white px-6 py-2 rounded-full hover:shadow-lg transition">Contacto</a>
             </div>
         </div>
     </nav>
 
-    <header class="bg-white py-20 px-4">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-5xl font-extrabold mb-6 text-gray-900 leading-tight">Impulsando el éxito de su negocio con visión estratégica.</h1>
-            <p class="text-xl text-gray-600 mb-8">Consultoría especializada en optimización de procesos y crecimiento exponencial.</p>
-            <a href="#contacto" class="inline-block bg-orange-500 text-white px-8 py-3 rounded-full font-bold text-lg hover:bg-orange-600 transition shadow-lg">Empezar hoy</a>
+    <header class="py-20 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">Consultoría estratégica que impulsa su <span class="imvik-blue">crecimiento.</span></h1>
+            <p class="text-xl text-slate-500 mb-10">Soluciones in-house diseñadas para resultados reales.</p>
+            <a href="https://wa.me/525516463181" class="inline-flex items-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition shadow-xl">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6 h-6" alt="WA">
+                Contactar por WhatsApp
+            </a>
         </div>
     </header>
 
-    <section id="servicios" class="py-20 bg-gray-100">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Nuestros Servicios</h2>
+    <section id="servicios" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-blue-500">
-                    <h3 class="text-xl font-bold mb-4">Estrategia de Negocio</h3>
-                    <p class="text-gray-600">Planificación detallada para alcanzar sus objetivos comerciales a corto y largo plazo.</p>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border-b-[10px] border-[#00AEEF]">
+                    <span class="text-4 font-black imvik-blue block mb-4 text-3xl">01</span>
+                    <h3 class="text-xl font-bold mb-3">Optimización</h3>
+                    <p class="text-slate-600">Refinamos sus procesos internos para maximizar la rentabilidad operativa.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-green-500">
-                    <h3 class="text-xl font-bold mb-4">Optimización Operativa</h3>
-                    <p class="text-gray-600">Reducción de costos y mejora de la eficiencia mediante procesos inteligentes.</p>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border-b-[10px] border-[#8DC63F]">
+                    <span class="text-4 font-black imvik-green block mb-4 text-3xl">02</span>
+                    <h3 class="text-xl font-bold mb-3">Estrategia</h3>
+                    <p class="text-slate-600">Planificación sólida para alcanzar objetivos comerciales a largo plazo.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-orange-500">
-                    <h3 class="text-xl font-bold mb-4">Transformación Digital</h3>
-                    <p class="text-gray-600">Implementación de herramientas tecnológicas para el mercado actual.</p>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border-b-[10px] border-[#F7941D]">
+                    <span class="text-4 font-black imvik-orange block mb-4 text-3xl">03</span>
+                    <h3 class="text-xl font-bold mb-3">Resultados</h3>
+                    <p class="text-slate-600">Convertimos la información en decisiones que ganan mercados.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="nosotros" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6">Liderazgo con Experiencia</h2>
-            <p class="text-lg text-gray-600 italic">"En IMVIK Consulting, creemos en la colaboración directa y transparente para generar resultados medibles."</p>
-            <p class="mt-4 font-bold text-gray-900">— Guillermo Ramírez, Socio Fundador</p>
-        </div>
-    </section>
-
-    <section id="contacto" class="py-20 bg-gray-900 text-white">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8">¿Listo para dar el siguiente paso?</h2>
-            <div class="space-y-4">
-                <p class="text-xl">📧 imvikconsulting@gmail.com</p>
-                <p class="text-xl">📞 55 16 46 31 81</p>
+    <section id="contacto" class="py-20">
+        <div class="max-w-xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">¿Hablamos de su proyecto?</h2>
+            <div class="space-y-6">
+                <div class="flex items-center justify-center gap-4 p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-8 h-8" alt="WhatsApp">
+                    <div class="text-left">
+                        <p class="text-sm font-bold text-slate-400 uppercase">WhatsApp Directo</p>
+                        <a href="https://wa.me/525516463181" class="text-xl font-bold hover:text-imvik-blue transition">55 1646 3181</a>
+                    </div>
+                </div>
+                <div class="text-slate-500 font-medium">
+                    📧 imvikconsulting@gmail.com
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-8 text-center text-gray-500 text-sm border-t border-gray-100">
+    <footer class="py-12 border-t border-slate-100 text-center text-slate-400 text-sm font-semibold">
         &copy; 2026 IMVIK Consulting. Todos los derechos reservados.
     </footer>
 
