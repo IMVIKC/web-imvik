@@ -8,125 +8,132 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        /* Colores Corporativos IMVIK */
         .imvik-blue { color: #00AEEF; }
         .bg-imvik-blue { background-color: #00AEEF; }
         .imvik-orange { color: #F7941D; }
         .bg-imvik-orange { background-color: #F7941D; }
         .imvik-green { color: #8DC63F; }
+        /* Acento Salesforce */
         .sf-blue { color: #00A1E0; }
         .bg-sf-blue { background-color: #00A1E0; }
+        .logo-hover:hover { transform: scale(1.05); transition: all 0.3s ease; }
     </style>
 </head>
 <body class="bg-white text-slate-900">
 
-    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 py-6 border-b border-gray-100">
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 py-6 border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
-            <img src="logo.png" alt="IMVIK Consulting" class="h-20 md:h-24 w-auto object-contain">
+            <img src="logo.png" alt="IMVIK Consulting" class="h-20 md:h-28 w-auto object-contain logo-hover">
             
-            <div class="space-x-8 hidden md:flex items-center font-bold text-xs uppercase tracking-widest">
+            <div class="space-x-8 hidden md:flex items-center font-bold text-xs uppercase tracking-widest text-slate-600">
                 <a href="#quienes-somos" class="hover:text-imvik-blue transition">Nosotros</a>
                 <a href="#servicios" class="hover:text-imvik-blue transition">Servicios</a>
-                <a href="#contacto" class="bg-sf-blue text-white px-6 py-2 rounded-full hover:shadow-lg transition text-center">Contacto</a>
+                <a href="#contacto" class="bg-sf-blue text-white px-8 py-3 rounded-full hover:shadow-lg transition">Contacto</a>
             </div>
         </div>
     </nav>
 
-    <header class="py-24 px-6 text-center bg-gradient-to-b from-[#f0f9ff] to-white">
+    <header class="py-28 px-6 text-center bg-gradient-to-b from-[#e0f2fe] via-[#f8fafc] to-white">
         <div class="max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight">
+            <h1 class="text-6xl md:text-7xl font-extrabold mb-8 tracking-tighter leading-tight text-slate-900 text-balance">
                 Potenciamos su organización con <span class="sf-blue">Salesforce.</span>
             </h1>
-            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Convertimos la complejidad de la nube en una plataforma de crecimiento simple y potente para su negocio.
+            <p class="text-xl text-slate-600 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
+                Transformamos la complejidad de la nube en una plataforma de crecimiento simple, potente y centrada en la experiencia del cliente.
             </p>
-            <a href="https://wa.me/525516463181" class="inline-flex items-center gap-3 bg-[#25D366] text-white px-10 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition shadow-2xl">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6 h-6" alt="WA">
-                WhatsApp
-            </a>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://wa.me/525516463181" class="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl hover:-translate-y-1 transition-all">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6 h-6" alt="WA">
+                    WhatsApp
+                </a>
+            </div>
         </div>
     </header>
 
-    <section id="quienes-somos" class="py-24 px-6">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+    <section id="quienes-somos" class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
             <div>
-                <h2 class="text-4xl font-extrabold mb-6 italic">¿Quiénes Somos?</h2>
-                <p class="text-lg text-slate-600 leading-relaxed mb-6">
+                <h2 class="text-4xl font-extrabold mb-8 italic tracking-tight">¿Quiénes Somos?</h2>
+                <p class="text-lg text-slate-600 leading-relaxed mb-6 text-balance">
                     Somos un equipo de expertos liderado por <strong>Irvin, Manuel y Víctor</strong>, dedicado a la implementación de alto nivel dentro del ecosistema Salesforce.
                 </p>
-                <p class="text-lg text-slate-600 leading-relaxed">
-                    Nuestra fortaleza es la experiencia en el core de Salesforce (<strong>Sales, Service, Experience Cloud</strong>) e integraciones clave como <strong>Marketing Cloud, Slack y Voice</strong>.
+                <p class="text-lg text-slate-600 leading-relaxed font-medium text-balance">
+                    Nuestra fortaleza reside en el core de Salesforce (<strong>Sales, Service, Experience Cloud</strong>) y en integraciones estratégicas con <strong>Marketing Cloud, Slack y Voice</strong>.
                 </p>
             </div>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="p-8 bg-slate-50 rounded-3xl border-t-8 border-imvik-blue shadow-sm text-center">
-                    <h4 class="font-bold text-3xl mb-1 sf-blue">Core</h4>
-                    <p class="text-xs font-bold text-slate-400 uppercase">Especialistas</p>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="p-10 bg-slate-50 rounded-[2rem] border-t-8 border-imvik-blue shadow-sm text-center">
+                    <h4 class="font-bold text-4xl mb-2 sf-blue tracking-tighter">Core</h4>
+                    <p class="text-xs font-black text-slate-400 uppercase tracking-widest">Experts</p>
                 </div>
-                <div class="p-8 bg-slate-50 rounded-3xl border-t-8 border-imvik-green shadow-sm text-center">
-                    <h4 class="font-bold text-3xl mb-1 imvik-green">Cloud</h4>
-                    <p class="text-xs font-bold text-slate-400 uppercase">Expertise</p>
+                <div class="p-10 bg-slate-50 rounded-[2rem] border-t-8 border-imvik-green shadow-sm text-center">
+                    <h4 class="font-bold text-4xl mb-2 imvik-green tracking-tighter">Cloud</h4>
+                    <p class="text-xs font-black text-slate-400 uppercase tracking-widest">Solutions</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 bg-slate-900 text-white px-6 rounded-[3rem] mx-4 shadow-2xl">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
-            <div class="border-l-4 border-imvik-green pl-8">
-                <h3 class="text-imvik-green font-bold uppercase tracking-widest mb-4">Misión</h3>
-                <p class="text-xl font-light leading-relaxed">
-                    Entregar soluciones estratégicas y personalizadas de Salesforce que impulsen el crecimiento y la eficiencia operativa de nuestros clientes, garantizando el máximo retorno de inversión.
+    <section class="py-24 bg-slate-900 text-white px-6 rounded-[4rem] mx-4 shadow-2xl">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20">
+            <div class="relative p-4">
+                <div class="absolute top-0 left-0 w-1 h-24 bg-imvik-green rounded-full"></div>
+                <h3 class="text-imvik-green font-bold uppercase tracking-widest mb-6 ml-6">Misión</h3>
+                <p class="text-2xl font-light leading-relaxed ml-6 opacity-95">
+                    "Entregar soluciones estratégicas de Salesforce que impulsen el crecimiento y la eficiencia operativa de nuestros clientes, garantizando el máximo retorno de inversión."
                 </p>
             </div>
-            <div class="border-l-4 border-imvik-orange pl-8">
-                <h3 class="text-imvik-orange font-bold uppercase tracking-widest mb-4">Visión</h3>
-                <p class="text-xl font-light leading-relaxed">
-                    Ser la consultora de referencia en Latinoamérica para implementaciones de Salesforce de alto valor en los sectores financiero y asegurador, reconocida por nuestra calidad técnica y humana.
+            <div class="relative p-4">
+                <div class="absolute top-0 left-0 w-1 h-24 bg-imvik-orange rounded-full"></div>
+                <h3 class="text-imvik-orange font-bold uppercase tracking-widest mb-6 ml-6">Visión</h3>
+                <p class="text-2xl font-light leading-relaxed ml-6 opacity-95">
+                    "Ser la consultora referente en Latinoamérica para implementaciones de alto valor en sectores financieros y de seguros, reconocida por nuestra calidad técnica."
                 </p>
             </div>
         </div>
     </section>
 
-    <section id="servicios" class="py-24 px-6">
+    <section id="servicios" class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-center text-3xl font-extrabold mb-16 italic">Ecosistema de Soluciones</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-10 rounded-3xl bg-white border border-slate-100 shadow-xl hover:border-sf transition-all group">
-                    <div class="w-14 h-14 bg-sf-blue/10 rounded-2xl mb-6 flex items-center justify-center font-black sf-blue text-2xl group-hover:bg-sf-blue group-hover:text-white transition-colors">01</div>
-                    <h3 class="font-bold text-xl mb-4">Ventas y Servicio</h3>
-                    <p class="text-slate-500 leading-relaxed">Optimización profunda de Sales y Service Cloud para unificar la visión de su cliente.</p>
+            <h2 class="text-center text-4xl font-extrabold mb-20 italic tracking-tight text-slate-800">Ecosistema de Soluciones</h2>
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="group p-12 rounded-[2.5rem] bg-white border border-slate-100 shadow-xl hover:shadow-2xl transition-all border-b-8 border-b-sf-blue text-center">
+                    <h3 class="font-bold text-2xl mb-4 group-hover:text-sf-blue transition-colors">Ventas y Servicio</h3>
+                    <p class="text-slate-500 leading-relaxed font-medium">Optimización de Sales y Service Cloud para una visión 360° del cliente.</p>
                 </div>
-                <div class="p-10 rounded-3xl bg-white border border-slate-100 shadow-xl hover:border-imvik-green transition-all group">
-                    <div class="w-14 h-14 bg-imvik-green/10 rounded-2xl mb-6 flex items-center justify-center font-black imvik-green text-2xl group-hover:bg-imvik-green group-hover:text-white transition-colors">02</div>
-                    <h3 class="font-bold text-xl mb-4">Marketing & Slack</h3>
-                    <p class="text-slate-500 leading-relaxed">Integración de Marketing Cloud y Slack para una comunicación organizacional ágil y efectiva.</p>
+                <div class="group p-12 rounded-[2.5rem] bg-white border border-slate-100 shadow-xl hover:shadow-2xl transition-all border-b-8 border-b-imvik-green text-center">
+                    <h3 class="font-bold text-2xl mb-4 group-hover:text-imvik-green transition-colors">Marketing & Slack</h3>
+                    <p class="text-slate-500 leading-relaxed font-medium">Integración ágil de Marketing Cloud y Slack para potenciar la comunicación.</p>
                 </div>
-                <div class="p-10 rounded-3xl bg-white border border-slate-100 shadow-xl hover:border-imvik-orange transition-all group">
-                    <div class="w-14 h-14 bg-imvik-orange/10 rounded-2xl mb-6 flex items-center justify-center font-black imvik-orange text-2xl group-hover:bg-imvik-orange group-hover:text-white transition-colors">03</div>
-                    <h3 class="font-bold text-xl mb-4">Voz y Experiencia</h3>
-                    <p class="text-slate-500 leading-relaxed">Implementación de Voice y Experience Cloud para crear trayectorias de cliente superiores.</p>
+                <div class="group p-12 rounded-[2.5rem] bg-white border border-slate-100 shadow-xl hover:shadow-2xl transition-all border-b-8 border-b-imvik-orange text-center">
+                    <h3 class="font-bold text-2xl mb-4 group-hover:text-imvik-orange transition-colors">Voz y Experiencia</h3>
+                    <p class="text-slate-500 leading-relaxed font-medium">Implementación de Voice y Experience Cloud para trayectorias superiores.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="py-24 px-6 bg-slate-50 rounded-t-[3rem]">
+    <section id="contacto" class="py-24 px-6 bg-slate-50 rounded-t-[5rem]">
         <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-4xl font-extrabold mb-12">Hablemos de su ecosistema Salesforce</h2>
-            <div class="flex flex-col md:flex-row justify-center gap-6">
-                <a href="https://wa.me/525516463181" class="bg-[#25D366] text-white px-10 py-5 rounded-2xl font-bold flex items-center justify-center gap-3 shadow-lg hover:scale-105 transition">
+            <h2 class="text-5xl font-extrabold mb-12 tracking-tight">Hablemos de su proyecto.</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
+                <a href="https://wa.me/525516463181" class="bg-[#25D366] text-white px-12 py-5 rounded-2xl font-bold flex items-center justify-center gap-3 shadow-lg hover:scale-105 transition">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6 h-6" alt="">
                     WhatsApp
                 </a>
-                <a href="mailto:imvikconsulting@gmail.com" class="bg-white border border-slate-200 px-10 py-5 rounded-2xl font-bold text-slate-600 hover:bg-slate-50 transition">
-                    📧 imvikconsulting@gmail.com
+                <a href="mailto:imvikconsulting@gmail.com" class="bg-white border border-slate-200 px-12 py-5 rounded-2xl font-bold text-slate-600 hover:bg-slate-100 transition">
+                    📧 Enviar Correo
                 </a>
             </div>
-            <p class="mt-10 font-bold text-slate-400 text-xl tracking-widest underline decoration-imvik-blue">55 1646 3181</p>
+            <div class="space-y-4">
+                <p class="text-3xl font-black text-slate-800 tracking-tighter">55 1646 3181</p>
+                <p class="text-sm font-bold text-slate-400 uppercase tracking-[0.4em]">imvikconsulting@gmail.com</p>
+            </div>
         </div>
     </section>
 
-    <footer class="py-12 text-center text-slate-400 text-sm font-bold bg-slate-50 uppercase tracking-widest">
+    <footer class="py-12 text-center text-slate-400 text-xs font-black bg-slate-50 uppercase tracking-[0.4em]">
         &copy; 2026 IMVIK Consulting. Todos los derechos reservados.
     </footer>
 
