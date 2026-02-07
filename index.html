@@ -148,11 +148,25 @@
       color: #38BDF8;
       text-decoration: none;
     }
+  
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
   </style>
 </head>
 <body>
 
 <header>
+  <div style="position:absolute;top:20px;right:20px;">
+    <a href="#en" style="color:#fff;font-weight:600;text-decoration:none;">EN</a>
+  </div>
   <!-- Reemplaza src por la ruta de tu logo -->
   <img src="logo.png" alt="IMVIK Consulting Logo">
   <h1>IMVIK Consulting</h1>
@@ -181,6 +195,18 @@
     <div class="card">
       <h3>Visión</h3>
       <p>Ser la consultora de referencia en Latinoamérica por nuestra excelencia técnica, calidad humana y confiabilidad, reconocidos por crear experiencias de cliente superiores y por convertir la tecnología en una ventaja competitiva real para cualquier tipo de negocio.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Salesforce Ready</h2>
+  <div class="two-cols">
+    <div class="card">
+      <p>IMVIK Consulting está preparada para operar bajo los estándares de una <strong>consultora Salesforce-ready</strong>, aplicando mejores prácticas de arquitectura, seguridad, automatización y experiencia de usuario desde el primer día.</p>
+    </div>
+    <div class="card">
+      <p>Diseñamos soluciones alineadas al ecosistema Salesforce que escalan, integran datos y generan valor inmediato, manteniendo una ejecución limpia, documentada y orientada a resultados.</p>
     </div>
   </div>
 </section>
@@ -215,12 +241,14 @@
   </div>
 </section>
 
+
+
 <section class="cta">
   <h2>Contacto</h2>
   <p>¿Listo para llevar tu negocio al siguiente nivel?</p>
   <div class="buttons">
     <a class="btn" href="mailto:imvikconsulting@gmail.com">Escríbenos por Email</a>
-    <a class="btn" href="https://wa.me/525516463181" target="_blank">WhatsApp</a>
+    <a class="btn" href="https://wa.me/525516463181" target="_blank">WhatsApp Business</a>
   </div>
 </section>
 
@@ -229,5 +257,34 @@
   <p><a href="Aviso%20de%20privacidad%20IMVIK.html" target="_blank">Aviso de Privacidad</a></p>
 </footer>
 
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  document.querySelectorAll('section, .card, .service').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+  });
+</script>
+
+<!-- English Version -->
+<section id="en" style="background:#F1F5F9;">
+  <h2>About Us (English)</h2>
+  <div class="two-cols">
+    <div class="card">
+      <p><strong>IMVIK Consulting</strong> is a Mexico-based consulting firm serving the LATAM market, specialized in Salesforce strategy, custom systems and data-driven growth solutions.</p>
+    </div>
+    <div class="card">
+      <p>We help organizations transform technology into a real competitive advantage by delivering scalable, high-impact digital solutions focused on efficiency, sales growth and customer experience.</p>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
+
