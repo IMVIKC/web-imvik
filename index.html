@@ -1,267 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>| Salesforce & Digital Solutions LATAM</title>
-  <meta name="description" content="IMVIK Consulting es una empresa mexicana enfocada en LATAM, experta en Salesforce, desarrollo de sistemas, apps, analítica de datos y soluciones digitales para potenciar ventas y retención de clientes." />
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --imvik-blue: #10B4E8;
-      --imvik-green: #9ACD32;
-      --imvik-orange: #F7931E;
-      --imvik-dark: #1F2A37;
-      --bg-light: #F8FAFC;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-    }
-
-    body {
-      color: var(--imvik-dark);
-      background-color: #ffffff;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, var(--imvik-blue), var(--imvik-green));
-      color: #fff;
-      padding: 90px 20px 80px;
-      text-align: center;
-      position: relative;
-    }
-
-    header img {
-      max-width: 160px;
-      margin-bottom: 24px;
-      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.1rem;
-      max-width: 900px;
-      margin: 0 auto;
-    }
-
-    section {
-      padding: 70px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 25px;
-      color: var(--imvik-dark);
-      text-align: center;
-    }
-
-    .two-cols {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 40px;
-      margin-top: 40px;
-    }
-
-    .card {
-      background: var(--bg-light);
-      border-radius: 14px;
-      padding: 30px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .service {
-      border-left: 6px solid var(--imvik-green);
-      padding: 25px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    }
-
-    .service h3 {
-      color: var(--imvik-dark);
-      margin-bottom: 10px;
-    }
-
-    .cta {
-      background: linear-gradient(135deg, var(--imvik-green), var(--imvik-orange));
-      color: #fff;
-      text-align: center;
-      padding: 70px 20px;
-    }
-
-    .cta h2 {
-      color: #fff;
-    }
-
-    .buttons {
-      margin-top: 30px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
-    .btn {
-      text-decoration: none;
-      background: #fff;
-      color: var(--imvik-dark);
-      padding: 14px 26px;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-    }
-
-    footer {
-      background: #1F2A37;
-      color: #CBD5E1;
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #38BDF8;
-      text-decoration: none;
-    }
-
-    .fade-up {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s ease;
-    }
-
-    .fade-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMVIK Consulting | Salesforce & Software Development LATAM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --imvik-blue: #00AEEF;
+            --imvik-green: #8DC63F;
+            --imvik-orange: #F7941E;
+            --imvik-dark: #37474F;
+        }
+        .bg-imvik-gradient {
+            background: linear-gradient(135deg, var(--imvik-blue), var(--imvik-green));
+        }
+        .text-imvik-blue { color: var(--imvik-blue); }
+        .btn-salesforce { background-color: #00A1E0; }
+    </style>
 </head>
+<body class="font-sans text-gray-800 bg-gray-50">
 
-<body>
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <img src="LOGO C.png" alt="IMVIK Consulting Logo" class="h-12">
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#inicio" class="hover:text-imvik-blue transition">Inicio</a>
+                <a href="#nosotros" class="hover:text-imvik-blue transition">Nosotros</a>
+                <a href="#servicios" class="hover:text-imvik-blue transition">Servicios</a>
+                <a href="#metodologia" class="hover:text-imvik-blue transition">Metodología</a>
+                <a href="#contacto" class="bg-imvik-gradient text-white px-5 py-2 rounded-full hover:opacity-90 transition">Contacto</a>
+            </div>
+        </div>
+    </nav>
 
-<header>
-  <div style="position:absolute;top:20px;right:20px;">
-    <a href="#en" style="color:#fff;font-weight:600;text-decoration:none;">EN</a>
-  </div>
+    <section id="inicio" class="pt-32 pb-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <span class="text-imvik-blue font-bold tracking-widest uppercase text-sm">Expertos en Ecosistema Salesforce</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mt-4 leading-tight">
+                    Transformamos la complejidad en <span class="text-transparent bg-clip-text bg-imvik-gradient">crecimiento</span>.
+                </h1>
+                <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+                    Somos una consultora mexicana líder en LATAM. Ayudamos a empresas a potenciar sus ventas y retención de clientes mediante tecnología de vanguardia y sistemas personalizados.
+                </p>
+                <div class="mt-8 flex space-x-4">
+                    <a href="https://wa.me/525516463181" class="bg-green-500 text-white px-8 py-3 rounded-lg font-bold flex items-center hover:bg-green-600 transition">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="LOGO C.png" alt="IMVIK Tech" class="w-4/5 animate-pulse">
+            </div>
+        </div>
+    </section>
 
-  <!-- LOGO IMVIK -->
-  <img src="logo-c.png" alt="IMVIK Consulting Logo">
+    <section id="nosotros" class="py-20 bg-gray-100">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8">¿Quiénes Somos?</h2>
+            <p class="text-xl text-gray-700 leading-relaxed">
+                En <strong>IMVIK Consulting</strong>, unimos el talento estratégico de Irvin, Manuel y Victor para ofrecer implementaciones de alto nivel. No solo desarrollamos software; creamos experiencias de cliente superiores. Nuestra pasión es convertir la tecnología Cloud en una plataforma de crecimiento simple y potente para negocios que buscan escalar sin perder el profesionalismo.
+            </p>
+            <div class="grid md:grid-cols-2 gap-10 mt-16">
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-imvik-blue">
+                    <h3 class="text-2xl font-bold mb-4 text-imvik-blue">Misión</h3>
+                    <p class="text-gray-600 italic">"Impulsar la evolución digital de las empresas en LATAM a través de soluciones Salesforce personalizadas y desarrollos robustos, garantizando excelencia operativa y un retorno de inversión inmediato."</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-imvik-green">
+                    <h3 class="text-2xl font-bold mb-4 text-imvik-green">Visión</h3>
+                    <p class="text-gray-600 italic">"Ser el referente tecnológico en Latinoamérica, reconocidos por nuestra calidad técnica y humana, siendo el socio estratégico más confiable para cualquier negocio que busque liderar su sector."</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <h1>IMVIK Consulting</h1>
-  <p>Empresa mexicana con enfoque en LATAM, especializada en Salesforce y soluciones digitales que impulsan ventas, eficiencia operativa y experiencias de cliente de alto impacto.</p>
-</header>
+    <section id="servicios" class="py-20 bg-white px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-16">Nuestras Soluciones</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 bg-blue-50 rounded-2xl hover:shadow-xl transition border border-blue-100">
+                    <i class="fas fa-cloud text-5xl text-blue-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Salesforce Strategy</h3>
+                    <p class="text-gray-600">Implementación experta de Sales, Service y Experience Cloud. Integramos Slack, Marketing Cloud y Voice para un ROI inmediato.</p>
+                </div>
+                <div class="p-8 bg-green-50 rounded-2xl hover:shadow-xl transition border border-green-100">
+                    <i class="fas fa-code text-5xl text-green-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Custom Systems</h3>
+                    <p class="text-gray-600">Desarrollo robusto en <strong>Java y Python</strong>. Creamos Apps y software interno diseñado para escalar con la demanda de tu negocio.</p>
+                </div>
+                <div class="p-8 bg-orange-50 rounded-2xl hover:shadow-xl transition border border-orange-100">
+                    <i class="fas fa-chart-line text-5xl text-orange-500 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-4">Data Analytics</h3>
+                    <p class="text-gray-600">Analítica avanzada para potenciar la retención y ventas mediante inteligencia de datos aplicada y dashboards estratégicos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section>
-  <h2>Quiénes Somos</h2>
-  <div class="two-cols">
-    <div class="card">
-      <p>Somos <strong>IMVIK Consulting</strong>, un equipo de expertos en transformación digital y Salesforce, liderado por Irvin, Manuel y Victor. Ayudamos a organizaciones de cualquier industria a convertir la tecnología en un habilitador real de crecimiento y experiencia del cliente.</p>
-    </div>
-    <div class="card">
-      <p>Nuestra fortaleza combina estrategia, ejecución técnica y enfoque humano, creando soluciones escalables, claras y alineadas a objetivos de negocio.</p>
-    </div>
-  </div>
-</section>
+    <section id="metodologia" class="py-20 bg-imvik-dark text-white px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-12">Nuestra Forma de Trabajo</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 font-bold">
+                <div class="p-6 border border-gray-600 rounded-lg">SCRUM</div>
+                <div class="p-6 border border-gray-600 rounded-lg">AGIL</div>
+                <div class="p-6 border border-gray-600 rounded-lg">SMART</div>
+                <div class="p-6 border border-gray-600 rounded-lg">FOCUS LATAM</div>
+            </div>
+        </div>
+    </section>
 
-<section style="background:#F1F5F9;">
-  <h2>Misión y Visión</h2>
-  <div class="two-cols">
-    <div class="card">
-      <h3>Misión</h3>
-      <p>Diseñar e implementar soluciones digitales y Salesforce de alto impacto, orientadas a resultados, que impulsen el crecimiento sostenible y maximicen el retorno de inversión.</p>
-    </div>
-    <div class="card">
-      <h3>Visión</h3>
-      <p>Ser la consultora de referencia en Latinoamérica por nuestra excelencia técnica, calidad humana y confiabilidad, creando experiencias de cliente superiores.</p>
-    </div>
-  </div>
-</section>
+    <section id="contacto" class="py-20 bg-white px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">¿Listo para potenciar tu negocio?</h2>
+        <p class="mb-10 text-gray-600">Hablemos de tu próximo proyecto. Respuesta en menos de 24 horas.</p>
+        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+            <a href="mailto:imvikconsulting@gmail.com" class="w-64 bg-gray-800 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center hover:bg-black transition">
+                <i class="fas fa-envelope mr-3"></i> Enviar Correo
+            </a>
+            <a href="https://wa.me/525516463181" class="w-64 bg-green-500 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center hover:bg-green-600 transition">
+                <i class="fab fa-whatsapp mr-3 text-xl"></i> Contactar por WhatsApp
+            </a>
+        </div>
+    </section>
 
-<section>
-  <h2>Salesforce Ready</h2>
-  <div class="two-cols">
-    <div class="card">
-      <p>Operamos bajo estándares de <strong>consultoría Salesforce-ready</strong>, aplicando mejores prácticas de arquitectura, automatización y experiencia de usuario.</p>
-    </div>
-    <div class="card">
-      <p>Diseñamos soluciones que escalan, integran datos y generan valor inmediato con una ejecución limpia y documentada.</p>
-    </div>
-  </div>
-</section>
+    <footer class="bg-gray-900 text-gray-400 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto text-center">
+            <img src="LOGO C.png" alt="IMVIK" class="h-10 mx-auto mb-6 grayscale brightness-200">
+            <p class="mb-4">© 2026 IMVIK Consulting. Todos los derechos reservados. Marca Registrada.</p>
+            <div class="flex justify-center space-x-6 text-sm">
+                <a href="Aviso de privacidad IMVIK" class="hover:text-white transition underline">Aviso de Privacidad</a>
+                <span>México | LATAM</span>
+            </div>
+        </div>
+    </footer>
 
-<section>
-  <h2>Nuestras Soluciones</h2>
-  <div class="services">
-    <div class="service">
-      <h3>Salesforce Strategy</h3>
-      <p>Implementación experta de Sales, Service y Experience Cloud con enfoque en ROI.</p>
-    </div>
-    <div class="service">
-      <h3>Custom Systems</h3>
-      <p>Desarrollo robusto en Java y Python de sistemas y aplicaciones escalables.</p>
-    </div>
-    <div class="service">
-      <h3>Data Analytics</h3>
-      <p>Analítica avanzada para potenciar ventas, retención y toma de decisiones.</p>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <h2>Contacto</h2>
-  <div class="buttons">
-    <a class="btn" href="mailto:imvikconsulting@gmail.com">Email</a>
-    <a class="btn" href="https://wa.me/525516463181" target="_blank">WhatsApp</a>
-  </div>
-</section>
-
-<footer>
-  <p>© IMVIK Consulting. Todos los derechos reservados. Marca registrada.</p>
-  <p><a href="aviso-privacidad-imvik.pdf" target="_blank">Aviso de Privacidad</a></p>
-</footer>
-
-<script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  });
-
-  document.querySelectorAll('section, .card, .service').forEach(el => {
-    el.classList.add('fade-up');
-    observer.observe(el);
-  });
-</script>
-
-<section id="en" style="background:#F1F5F9;">
-  <
+</body>
+</html>
 
