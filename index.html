@@ -11,130 +11,185 @@
             --imvik-blue: #00AEEF;
             --imvik-green: #8DC63F;
             --imvik-orange: #F7941E;
-            --imvik-dark: #37474F;
+            --imvik-dark: #1e293b;
         }
         .bg-imvik-gradient {
             background: linear-gradient(135deg, var(--imvik-blue), var(--imvik-green));
         }
         .text-imvik-blue { color: var(--imvik-blue); }
-        .btn-salesforce { background-color: #00A1E0; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="font-sans text-gray-800 bg-gray-50">
 
-    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <nav class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             <img src="LOGO C.png" alt="IMVIK Consulting Logo" class="h-12">
-            <div class="hidden md:flex space-x-8 font-medium">
+            <div class="hidden md:flex space-x-8 font-semibold text-gray-600">
                 <a href="#inicio" class="hover:text-imvik-blue transition">Inicio</a>
                 <a href="#nosotros" class="hover:text-imvik-blue transition">Nosotros</a>
                 <a href="#servicios" class="hover:text-imvik-blue transition">Servicios</a>
                 <a href="#metodologia" class="hover:text-imvik-blue transition">Metodología</a>
-                <a href="#contacto" class="bg-imvik-gradient text-white px-5 py-2 rounded-full hover:opacity-90 transition">Contacto</a>
+                <a href="#contacto" class="bg-imvik-gradient text-white px-6 py-2 rounded-full hover:shadow-lg transition">Contacto</a>
             </div>
         </div>
     </nav>
 
     <section id="inicio" class="pt-32 pb-20 px-4 bg-white">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+        <div class="max-w-7xl mx-auto flex flex-col md:row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
                 <span class="text-imvik-blue font-bold tracking-widest uppercase text-sm">Expertos en Ecosistema Salesforce</span>
                 <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 mt-4 leading-tight">
                     Transformamos la complejidad en <span class="text-transparent bg-clip-text bg-imvik-gradient">crecimiento</span>.
                 </h1>
                 <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-                    Somos una consultora mexicana líder en LATAM. Ayudamos a empresas a potenciar sus ventas y retención de clientes mediante tecnología de vanguardia y sistemas personalizados.
+                    Consultora mexicana líder en LATAM. Ayudamos a empresas a potenciar sus ventas y retención de clientes mediante tecnología de vanguardia y sistemas internos a medida.
                 </p>
                 <div class="mt-8 flex space-x-4">
-                    <a href="https://wa.me/525516463181" class="bg-green-500 text-white px-8 py-3 rounded-lg font-bold flex items-center hover:bg-green-600 transition">
-                        <i class="fab fa-whatsapp mr-2 text-xl"></i> WhatsApp
+                    <a href="https://wa.me/525516463181" class="bg-green-500 text-white px-8 py-4 rounded-xl font-bold flex items-center hover:bg-green-600 transition shadow-lg">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i> Contactar WhatsApp
                     </a>
                 </div>
             </div>
             <div class="md:w-1/2 flex justify-center">
-                <img src="LOGO C.png" alt="IMVIK Tech" class="w-4/5 animate-pulse">
+                <img src="LOGO C.png" alt="IMVIK Tech" class="w-4/5 drop-shadow-2xl">
             </div>
         </div>
     </section>
 
-    <section id="nosotros" class="py-20 bg-gray-100">
+    <section id="nosotros" class="py-20 bg-gray-50 border-y border-gray-100">
         <div class="max-w-5xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8">¿Quiénes Somos?</h2>
-            <p class="text-xl text-gray-700 leading-relaxed">
-                En <strong>IMVIK Consulting</strong>, unimos el talento estratégico de Irvin, Manuel y Victor para ofrecer implementaciones de alto nivel. No solo desarrollamos software; creamos experiencias de cliente superiores. Nuestra pasión es convertir la tecnología Cloud en una plataforma de crecimiento simple y potente para negocios que buscan escalar sin perder el profesionalismo.
+            <h2 class="text-3xl font-bold mb-8 text-gray-900">¿Quiénes Somos?</h2>
+            <p class="text-xl text-gray-700 leading-relaxed mb-12">
+                En <strong>IMVIK Consulting</strong>, unimos el talento estratégico de Irvin, Manuel y Victor para ofrecer implementaciones de alto nivel. No solo desarrollamos software; creamos experiencias de cliente superiores convirtiendo la tecnología Cloud en una plataforma de crecimiento potente para su negocio.
             </p>
-            <div class="grid md:grid-cols-2 gap-10 mt-16">
-                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-imvik-blue">
-                    <h3 class="text-2xl font-bold mb-4 text-imvik-blue">Misión</h3>
-                    <p class="text-gray-600 italic">"Impulsar la evolución digital de las empresas en LATAM a través de soluciones Salesforce personalizadas y desarrollos robustos, garantizando excelencia operativa y un retorno de inversión inmediato."</p>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="bg-white p-10 rounded-3xl shadow-sm border-t-8 border-[#00AEEF]">
+                    <h3 class="text-2xl font-bold mb-4 text-[#00AEEF]">Misión</h3>
+                    <p class="text-gray-600 text-lg italic">"Impulsar la evolución digital de las empresas en LATAM a través de soluciones Salesforce personalizadas y desarrollos robustos, garantizando excelencia operativa y un retorno de inversión inmediato."</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-imvik-green">
-                    <h3 class="text-2xl font-bold mb-4 text-imvik-green">Visión</h3>
-                    <p class="text-gray-600 italic">"Ser el referente tecnológico en Latinoamérica, reconocidos por nuestra calidad técnica y humana, siendo el socio estratégico más confiable para cualquier negocio que busque liderar su sector."</p>
+                <div class="bg-white p-10 rounded-3xl shadow-sm border-t-8 border-[#8DC63F]">
+                    <h3 class="text-2xl font-bold mb-4 text-[#8DC63F]">Visión</h3>
+                    <p class="text-gray-600 text-lg italic">"Ser el referente tecnológico en Latinoamérica, reconocidos por nuestra calidad técnica y humana, siendo el socio estratégico más confiable para cualquier negocio que busque liderar su sector."</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="servicios" class="py-20 bg-white px-4">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-16">Nuestras Soluciones</h2>
+    <section id="servicios" class="py-24 bg-white px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Soluciones de Alto Impacto</h2>
+                <p class="text-gray-500">Desarrollo a medida con enfoque en resultados de negocio.</p>
+            </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 bg-blue-50 rounded-2xl hover:shadow-xl transition border border-blue-100">
-                    <i class="fas fa-cloud text-5xl text-blue-500 mb-6"></i>
-                    <h3 class="text-xl font-bold mb-4">Salesforce Strategy</h3>
-                    <p class="text-gray-600">Implementación experta de Sales, Service y Experience Cloud. Integramos Slack, Marketing Cloud y Voice para un ROI inmediato.</p>
+                <div class="group p-10 bg-white rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/50 hover:border-blue-300 transition-all">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-blue-600 text-2xl group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Salesforce Strategy</h3>
+                    <p class="text-gray-600 leading-relaxed">Implementación experta de Sales, Service y Experience Cloud con enfoque en ROI inmediato. Maximizamos el potencial de su CRM.</p>
                 </div>
-                <div class="p-8 bg-green-50 rounded-2xl hover:shadow-xl transition border border-green-100">
-                    <i class="fas fa-code text-5xl text-green-500 mb-6"></i>
-                    <h3 class="text-xl font-bold mb-4">Custom Systems</h3>
-                    <p class="text-gray-600">Desarrollo robusto en <strong>Java y Python</strong>. Creamos Apps y software interno diseñado para escalar con la demanda de tu negocio.</p>
+                <div class="group p-10 bg-white rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/50 hover:border-green-300 transition-all">
+                    <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center mb-6 text-green-600 text-2xl group-hover:bg-green-600 group-hover:text-white transition-all">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Custom Systems</h3>
+                    <p class="text-gray-600 leading-relaxed">Desarrollo robusto en <strong>Java y Python</strong>. Creamos apps y software interno escalable que potencia la operación de su empresa.</p>
                 </div>
-                <div class="p-8 bg-orange-50 rounded-2xl hover:shadow-xl transition border border-orange-100">
-                    <i class="fas fa-chart-line text-5xl text-orange-500 mb-6"></i>
-                    <h3 class="text-xl font-bold mb-4">Data Analytics</h3>
-                    <p class="text-gray-600">Analítica avanzada para potenciar la retención y ventas mediante inteligencia de datos aplicada y dashboards estratégicos.</p>
+                <div class="group p-10 bg-white rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/50 hover:border-orange-300 transition-all">
+                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 text-orange-600 text-2xl group-hover:bg-orange-600 group-hover:text-white transition-all">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Data Analytics</h3>
+                    <p class="text-gray-600 leading-relaxed">Analítica avanzada para potenciar la retención y ventas mediante inteligencia de datos aplicada al mercado de LATAM.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="metodologia" class="py-20 bg-imvik-dark text-white px-4">
+    <section id="metodologia" class="py-24 bg-slate-900 text-white px-4">
         <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-3xl font-bold mb-12">Nuestra Forma de Trabajo</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 font-bold">
-                <div class="p-6 border border-gray-600 rounded-lg">SCRUM</div>
-                <div class="p-6 border border-gray-600 rounded-lg">AGIL</div>
-                <div class="p-6 border border-gray-600 rounded-lg">SMART</div>
-                <div class="p-6 border border-gray-600 rounded-lg">FOCUS LATAM</div>
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Nuestra Ingeniería de Trabajo</h2>
+            <p class="text-gray-400 mb-16 max-w-2xl mx-auto">Combinamos marcos de trabajo ágiles con objetivos inteligentes para garantizar entregas precisas.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="group p-8 rounded-2xl bg-gradient-to-br from-[#00AEEF] to-[#0077A3] shadow-lg transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-sync-alt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-2 tracking-tighter uppercase">SCRUM</h3>
+                    <p class="text-sm text-blue-50 font-medium">Ciclos de entrega rápidos y mejora continua en cada sprint.</p>
+                </div>
+
+                <div class="group p-8 rounded-2xl bg-gradient-to-br from-[#8DC63F] to-[#6D9A31] shadow-lg transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bullseye text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-2 tracking-tighter uppercase">SMART</h3>
+                    <p class="text-sm text-green-50 font-medium">Objetivos específicos y medibles diseñados para su éxito.</p>
+                </div>
+
+                <div class="group p-8 rounded-2xl bg-gradient-to-br from-[#F7941E] to-[#C77618] shadow-lg transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-2 tracking-tighter uppercase">ÁGIL</h3>
+                    <p class="text-sm text-orange-50 font-medium">Adaptabilidad total ante los cambios constantes del mercado.</p>
+                </div>
+
+                <div class="group p-8 rounded-2xl bg-gradient-to-br from-gray-700 to-gray-800 border border-gray-600 shadow-lg transform hover:-translate-y-2 transition-all duration-300">
+                    <div class="bg-white/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-[#00AEEF]">
+                        <i class="fas fa-globe-americas text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-2 tracking-tighter uppercase text-[#00AEEF]">LATAM</h3>
+                    <p class="text-sm text-gray-300 font-medium">Expertos locales con estándares de calidad internacionales.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="py-20 bg-white px-4 text-center">
-        <h2 class="text-3xl font-bold mb-4">¿Listo para potenciar tu negocio?</h2>
-        <p class="mb-10 text-gray-600">Hablemos de tu próximo proyecto. Respuesta en menos de 24 horas.</p>
-        <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
-            <a href="mailto:imvikconsulting@gmail.com" class="w-64 bg-gray-800 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center hover:bg-black transition">
-                <i class="fas fa-envelope mr-3"></i> Enviar Correo
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center items-center gap-12 opacity-60 hover:opacity-100 transition-opacity">
+            <div class="flex items-center space-x-2 font-bold text-xl text-gray-400">
+                <i class="fab fa-java text-4xl"></i> <span>JAVA</span>
+            </div>
+            <div class="flex items-center space-x-2 font-bold text-xl text-gray-400">
+                <i class="fab fa-python text-4xl"></i> <span>PYTHON</span>
+            </div>
+            <div class="flex items-center space-x-2 font-bold text-xl text-gray-400">
+                <i class="fab fa-salesforce text-4xl"></i> <span>SALESFORCE</span>
+            </div>
+            <div class="flex items-center space-x-2 font-bold text-xl text-gray-400">
+                <i class="fas fa-mobile-alt text-4xl"></i> <span>MOBILE APPS</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-gray-50 px-4 text-center">
+        <h2 class="text-4xl font-bold mb-6 text-gray-900 tracking-tight">Potenciemos su Retención y Ventas</h2>
+        <p class="mb-12 text-gray-600 text-lg max-w-xl mx-auto">Sea una empresa pequeña o en plena expansión, tenemos el sistema interno que necesita.</p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+            <a href="mailto:imvikconsulting@gmail.com" class="w-full md:w-72 bg-gray-900 text-white px-8 py-5 rounded-2xl font-bold flex items-center justify-center hover:bg-black transition shadow-xl">
+                <i class="fas fa-envelope mr-3 text-xl"></i> imvikconsulting@gmail.com
             </a>
-            <a href="https://wa.me/525516463181" class="w-64 bg-green-500 text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center hover:bg-green-600 transition">
-                <i class="fab fa-whatsapp mr-3 text-xl"></i> Contactar por WhatsApp
+            <a href="https://wa.me/525516463181" class="w-full md:w-72 bg-green-500 text-white px-8 py-5 rounded-2xl font-bold flex items-center justify-center hover:bg-green-600 transition shadow-xl">
+                <i class="fab fa-whatsapp mr-3 text-2xl"></i> +52 55 1646 3181
             </a>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-12 px-4 border-t border-gray-800">
+    <footer class="bg-white py-16 px-4 border-t border-gray-200">
         <div class="max-w-7xl mx-auto text-center">
-            <img src="LOGO C.png" alt="IMVIK" class="h-10 mx-auto mb-6 grayscale brightness-200">
-            <p class="mb-4">© 2026 IMVIK Consulting. Todos los derechos reservados. Marca Registrada.</p>
-            <div class="flex justify-center space-x-6 text-sm">
-                <a href="Aviso de privacidad IMVIK" class="hover:text-white transition underline">Aviso de Privacidad</a>
-                <span>México | LATAM</span>
+            <img src="LOGO C.png" alt="IMVIK" class="h-14 mx-auto mb-8">
+            <p class="text-gray-500 font-medium">© 2026 IMVIK Consulting. Marca Registrada. Todos los derechos reservados.</p>
+            <div class="mt-6 flex flex-wrap justify-center gap-6 text-sm font-semibold text-gray-400 uppercase tracking-widest">
+                <a href="Aviso de privacidad IMVIK" class="hover:text-imvik-blue transition border-b border-transparent hover:border-imvik-blue">Aviso de Privacidad</a>
+                <span class="hidden md:block">|</span>
+                <span>Desarrollado en México para LATAM</span>
             </div>
         </div>
     </footer>
 
 </body>
 </html>
-
